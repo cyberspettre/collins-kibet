@@ -5,6 +5,14 @@
   font-weight: normal;
   font-style: normal;
 }
+
+@media (max-width: 767px) {
+  #fh5co-features .item iframe {
+    max-width: 100%;
+    /* Adjust the width as per your requirement */
+    height: 300;
+  }
+}
 /* =======================================================
 *
 * 	Template Style 
@@ -12,7 +20,7 @@
 * ======================================================= */
 
 .dropbtn {
-  background-color: transparent;
+  background-color:#337262 ;
   color: #1fe0ac;
   padding: 16px;
   font-size: 16px;
@@ -61,17 +69,17 @@
   color: #1fc9e0;
 }
 .griid {
-  
   width: 1000px;
   margin: 30px auto;
 
   display: grid;
-  grid-template-rows: 150px 150px;
-  grid-template-columns: 150px 150px 150px;
+  grid-template-rows: auto;
+  /* Let rows adjust automatically based on content */
+  grid-template-columns: repeat(2, 1fr);
+  /* Two columns for each row */
 
-  //grid-row-gap: 500px;
-  //grid-column-gap: 500px;
-  grid-gap: 400px;
+  grid-gap: 30px;
+  /* Adjust the gap between items */
 }
 
 .item {
